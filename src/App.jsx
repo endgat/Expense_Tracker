@@ -18,8 +18,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<Root />}/>
-          <Route path='/login' element={<Login />}/>
-          <Route path='/signup' element={<SignUp />}/>
+          <Route path='/Login' element={<Login />}/>
+          <Route path='/Signup' element={<SignUp />}/>
           <Route path='/Dashboard' element={<Home />}/>
           <Route path='/income' element={<Income />}/>
           <Route path='/Expense' element={<Expense />}/>
@@ -40,6 +40,6 @@ const Root = () => {
   if (isAuthenticated) {
     return <Navigate to="/Dashboard" replace />;
   } else {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/Login" replace />;
   }
 };
